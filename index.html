@@ -1,8 +1,56 @@
-<html>
-<head>
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
 
+<head>
+<meta charset="utf-8">
+<title>Custom Video Player!</title>
+<!-- only force Internet Explorer 10 standards for testing on local machine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <link rel="stylesheet" type="text/css" href="skin/css/vid-skin.css">
+<link rel="stylesheet" href="css/main.css" type="text/css" />
 </head>
 <body>
-<h1>Heading</h1>
+  <section id="skin">
+  <img id="playMe" src="skin/img/playMe.png">
+    <video id="vid" width="100%" tabindex="0">
+      <source src="php.webm"></source>
+    </video>
+    <nav id="nav">
+		<div id="buttons">
+			<img id="playBtn" src="skin/img/play.png">
+		</div>
+		<div id="timer">
+			<p id="_time">00:00</p>
+		</div>
+		<div id="defaultBar">
+			<div id="progBar"></div>
+		</div>
+		<div id="durTime">
+			<p id="_durTime">00:00</p>
+		</div>
+		
+		<div id="caption">
+			<img id="cc" src="skin/img/caption.png">
+			<div id="sub_check">
+				<input type="radio" name="subtit" id="eng" checked><label for="eng">English</label>
+			</div>
+		</div>
+		<div class="volume">
+			<img id="vol" src="skin/img/volume.png">
+			<div class="volWrap">
+				<div id="volControl">
+					<div id="volAdjust"></div>
+				</div>
+			</div>
+		</div>
+		<div id="expand">
+			<img id="ex" src="skin/img/expand.png">
+		</div>
+		<div style="clear: both;"></div>
+	</nav>
+    </section>
+
+    <script type="text/javascript" src="skin/js/vid-script.js"></script>
 </body>
 </html>

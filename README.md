@@ -1,1 +1,2 @@
-# html5-videoplayer.github.io
+# html5-videoplayer
+Cool HTML5 Custom Video Player
