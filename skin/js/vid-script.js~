@@ -193,7 +193,7 @@ function clickedBar(e) {
             progBar.style.width = mouseX + 'px';
         }
     }
-   //alert(mouseX);
+   alert(mouseX);
 }
 
 
